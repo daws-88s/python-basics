@@ -7,22 +7,42 @@ sample_str = "Welcome to python session"
 # Python is zero index based, -ve index based
 
 first_char = sample_str[0]
-print(first_char)
+# print(first_char)
 
 last_char = sample_str[-1]
-print(last_char)
+# print(last_char)
 
 str_len = len(sample_str)
-print(str_len)
+# print(str_len)
 
 words = sample_str.split(sep=" ") # list
-print(words, type(words))
+# print(words, type(words))
 
-print(dir(sample_str))
+# print(dir(sample_str))
 
 """
-['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'removeprefix', 'removesuffix', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
 """
 
 sample_str = " hello, welcome to python "
-print(sample_str.strip())
+# print(sample_str.strip())
+
+sample_str = "Welcome to python session"
+
+# How to extract first 2 characters of sample_str
+# To do this, we use ':'
+# Usage: start:end:step, all three are optional
+# Important: end index is not included, hence use end+1
+first_two = sample_str[0:5] # here the step size value is 1 (default)
+print(first_two)
+
+alternate_chars = sample_str[::2] # start: 0, end: len(str)
+print(alternate_chars)
+
+# Reverse a string
+reverse_string = sample_str[::-1] # start: -1, end: -1-len(str), step: -1
+print(reverse_string)
+
+sample_str = "Welcome to python session"
+# sample_str[2] = 'a' # Throws an error: 'str' object does not support item assignment
+# The above error indicates that its an immutable datatype
