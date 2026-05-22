@@ -30,7 +30,7 @@ sample_str = " hello, welcome to python "
 sample_str = "Welcome to python session"
 
 # How to extract first 2 characters of sample_str
-# To do this, we use ':'
+# To do this, we use ':' -> slicing
 # Usage: start:end:step, all three are optional
 # Important: end index is not included, hence use end+1
 first_two = sample_str[0:5] # here the step size value is 1 (default)
