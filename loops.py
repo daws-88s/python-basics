@@ -45,3 +45,7 @@ sample = ["server1", "server2", "server3", "server4"]
 # Tuple unpacking
 a, b = (1, 2)
 print(a, b)
+
+# List unpacking
+a, b = [1, 2]
+print(a, b)
